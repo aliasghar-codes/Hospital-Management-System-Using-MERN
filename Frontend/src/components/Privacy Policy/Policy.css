@@ -1,0 +1,32 @@
+.policy-container h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+.policy-container p:first-of-type{
+    color: var(--color-secondary);
+}
+.policy-container h2, .policy-container h3{
+    margin: 2rem 0;
+    margin-top: 4rem;
+}
+.policy-container h3{
+    font-size: 1.6rem;
+}
+.policy-container h2{
+    font-size: 2rem;
+}
+.policy-container p{
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+}
+.policy-container ul {
+    list-style-type: disc;
+}
+.policy-container ul li{
+    margin-bottom: .5rem;
+    line-height: 2rem;
+}
+.policy-container strong{
+    margin: .5rem 0;
+    color: var(--color-secondary);
+}

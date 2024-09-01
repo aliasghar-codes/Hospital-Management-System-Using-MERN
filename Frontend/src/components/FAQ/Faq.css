@@ -1,0 +1,45 @@
+.faq_container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.faq_left{
+    width: 45%;
+}
+.faq_left img{
+    width: 80%;
+}
+.faq_right{
+    width: 55%;
+}
+.faq_right h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.faq_right .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq_right .title h4:nth-child(2){
+    font-size: 1.2rem;
+}
+.faq_right ul li{
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid rgb(161, 161, 161);
+    margin-bottom: 2rem;
+    padding: 1rem .9rem;
+    border-radius: 5px;
+}
+.faq_right ul li h4{
+    font-size: .9rem;
+    font-weight: 500;
+}
+.faq_right ul li p{
+    font-size: .8rem;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    width: 95%;
+    text-align: justify;
+}
