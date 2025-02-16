@@ -1,0 +1,71 @@
+.admin-nav-layout{
+    display: flex;
+}
+.admin-nav{
+    height: 100vh;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.admin-nav ul{
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+.admin-nav ul li svg{
+    font-size: 1.3rem;
+    color: white;
+    transition: all .2s ease;
+}
+.admin-nav ul li svg:hover{
+    color: rgb(173, 173, 173);
+}
+.admin-nav ul li a:hover svg{
+    color: rgb(173, 173, 173);
+}
+.admin-nav button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.admin-nav .go-back{
+    position: absolute;
+    top: .3rem;
+    left: .3rem;
+    font-size: 1.3rem;
+}
+.admin-nav .go-back svg{
+    transition: all .3s ease;
+    cursor: pointer;
+    color: white;
+}
+.admin-nav .go-back svg:hover{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .admin-nav-layout{
+        flex-direction: column;
+    }
+    .admin-nav{
+        height: 4rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .admin-nav ul{
+        display: flex;
+        gap: 0;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        padding: 0 3rem;
+    }
+    .admin-nav .go-back{
+        display: none;
+    }
+    .admin-nav ul li svg{
+        font-size: 1rem;
+    }
+}

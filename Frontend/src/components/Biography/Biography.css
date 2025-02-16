@@ -37,39 +37,48 @@
     gap: 1rem;
     width: 50px;
 }
-.content_left_side p{
+
+.content_left_side p {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     letter-spacing: 2.5rem;
     font-size: 1.1rem;
     margin-top: 10px;
 }
-.content_left_side hr{
+
+.content_left_side hr {
     height: 5rem;
 }
-.content_right_side{
+
+.content_right_side {
     height: 500px;
 }
-.content_right_side p{
+
+.content_right_side p {
     color: var(--color-secondary);
     margin-bottom: 2rem;
     line-height: 2rem;
     width: 85%;
 }
-.content_right_side span{
+
+.content_right_side span {
     color: purple;
 }
+
 .content_right_side p:first-child::first-letter {
     font-size: 5rem;
     margin-right: 5px;
 }
-.content_right_side p:first-child span{
+
+.content_right_side p:first-child span {
     color: var(--color-primary);
 }
-.content_right_side .last_para{
+
+.content_right_side .last_para {
     margin-bottom: 4rem;
 }
-.content_right_side a{
+
+.content_right_side a {
     margin-left: 2rem;
     color: black;
     border: .1px solid rgba(80, 80, 80, 0.363);
@@ -78,14 +87,57 @@
     font-weight: 500;
     border-radius: 5px;
 }
-.content_right_side a span{
+
+.content_right_side a span {
     margin-left: 2px;
     font-weight: 900;
 }
-.content_right_side a:hover{
+
+.content_right_side a:hover {
     border: .1px solid transparent;
-    
-    span{
+
+    span {
         margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about_section {
+        flex-wrap: wrap;
+    }
+
+    .about_section .left {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .about_section .right {
+        width: 100%;
+    }
+
+    .about_section .right h2 {
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+    }
+
+    .content_right_side p:first-child::first-letter {
+        font-size: 3rem;
+    }
+
+    .content_right_side p {
+        font-size: .8rem;
+    }
+
+    .about_container {
+        margin-top: 3rem;
+    }
+
+    .content_left_side p {
+        font-size: 1rem;
+    }
+
+    .content_right_side a {
+        padding: .7rem 1.5rem;
+        font-size: .8rem;
     }
 }

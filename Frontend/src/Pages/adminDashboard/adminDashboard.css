@@ -1,0 +1,218 @@
+.admin-dashboard{
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    padding: 3rem;
+}
+.admin-dashboard-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.admin-dashboard-top section:first-child{
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    background-color: white;
+    border-radius: 1rem;
+    padding-right: 1rem;
+    height: 11rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.admin-dashboard-top section:first-child .image-container{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+.admin-dashboard-top section:first-child .text-container{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.admin-dashboard-top section:first-child img{
+    object-fit: contain;
+    height: 100%;
+}
+.admin-dashboard-top section:first-child p{
+    font-size: .8rem;
+    margin-top: .7rem;
+    line-height: 1.3rem;
+}
+.admin-dashboard-top section:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 23%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem .5rem;
+    height: 11rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.admin-dashboard-top section:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    height: 11rem;
+    gap: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.admin-dashboard-bottom{
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    padding: 1rem 2.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.admin-dashboard-bottom h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+.admin-dashboard-bottom .headings{
+    display: grid;
+    grid-template-columns: 20% 20% 30% 20% 10%;
+    margin-bottom: 2rem;
+}
+.admin-dashboard-bottom .headings h4{
+    padding: 0 .3rem;
+}
+.admin-dashboard-bottom .appointment-container{
+    display: grid;
+    grid-template-columns: 20% 20% 30% 20% 10%;
+    margin-bottom: 1.2rem;
+    align-content: center;
+}
+.admin-dashboard-bottom .appointment-container p
+{
+    padding: .5rem .3rem;
+}
+.admin-dashboard-bottom .appointment-container select{
+    padding: .5rem .8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: .2rem;
+    font-weight: bold;
+}
+.admin-dashboard-bottom-2{
+    min-height: 15rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media screen and (max-width: 480px) {
+    .admin-dashboard{
+        border-top-left-radius: .6rem;
+        border-top-right-radius: .6rem;
+        border-bottom-left-radius: 0;
+        padding: 2rem 1rem;
+        min-height: 93vh;
+    }
+    .admin-dashboard-top section:first-child{
+        width: 100%;
+        border-radius: .5rem;
+        padding-right: .5rem;
+        height: 8rem;
+        margin-bottom: 1.5rem;
+    }
+    .admin-dashboard-top section:first-child .image-container{
+        width: 40%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .admin-dashboard-top section:first-child .text-container{
+        width: 60%;
+        height: 100%;
+    }
+    .admin-dashboard-top section:first-child img{
+        width: 100%;
+        height: auto;
+    }
+    .admin-dashboard-top section:first-child p{
+        font-size: .6rem;
+        margin-top: .4rem;
+        line-height: 1rem;
+    }
+    .admin-dashboard-top section:first-child h3{
+        font-weight: 500;
+        font-size: .9rem;
+    }
+    .admin-dashboard-top section:nth-child(2){
+        gap: 1rem;
+        width: 49%;
+        border-radius: .5rem;
+        padding: 0rem 1rem;
+        height: 7rem;
+    }
+    .admin-dashboard-top section:last-child{
+        width: 49%;
+        height: 7rem;
+        border-radius: .5rem;
+        gap: 1rem;
+    }
+    .admin-dashboard-top section:nth-child(2) h3,
+    .admin-dashboard-top section:last-child h3{
+        font-size: .9rem;
+        font-weight: 500;
+    }
+    .admin-dashboard-bottom{
+        border-radius: .5rem;
+        margin-top: 2rem;
+        padding: 1.5rem 1rem;
+    }
+    .admin-dashboard-bottom h3{
+        font-size: .9rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+    }
+    .admin-dashboard-bottom .headings{
+        grid-template-columns: 30% 23% 30% 25% 20%;
+        margin-bottom: 1rem;
+        overflow-x: auto;
+    }
+    .admin-dashboard-bottom .headings h4{
+        font-weight: 500;
+        font-size: .8rem;
+    }
+    .admin-dashboard-bottom .appointment-container{
+        grid-template-columns: 30% 23% 30% 25% 20%;
+        margin-bottom: .7rem;
+        overflow-x: auto;
+    }
+    .admin-dashboard-bottom .appointment-container p
+    {
+        font-size: .7rem;
+    }
+    .admin-dashboard-bottom .appointment-container select{
+        padding: .3rem .5rem;
+        font-size: .7rem;
+    }
+    .admin-dashboard-bottom-2{
+        min-height: 10rem;
+        border-radius: .5rem;
+        margin-top: 2rem;
+    }
+    .admin-dashboard-bottom-2 h1{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}

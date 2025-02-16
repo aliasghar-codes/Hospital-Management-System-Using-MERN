@@ -3,11 +3,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 6rem;
-    height: 15vh;
+    height: 17vh;
     background-image: url("../../images/mask.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 
 .activeLink{
@@ -27,20 +28,24 @@ nav ul li a:hover {
     color: var(--color-primary);
 }
 
-.logo h3 {
-    gap: 3px;
+.logo{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    gap: 5px;
+}
+
+.logo h3 {
     font-weight: 600;
     font-size: 1.2rem;
 }
 
 .logo span {
     color: var(--color-primary);
-    font-size: 3rem;
-    font-weight: 700;
-}
+    font-size: 2.5rem;
+    font-weight: 600;
+} 
+
 .login_button span{
     overflow: hidden;
 }
@@ -162,4 +167,74 @@ nav ul li a:hover {
     cursor: pointer;
     background: transparent;
     font-size: 1.3rem;
+}
+.header-btns a{
+    font-size: 1.3rem;
+}
+.hamburger-menu{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    header nav{
+        display: none;
+    }
+    header .header-btns{
+        display: none;
+    }
+    header{
+        padding: 0 1rem;
+        height: 10vh;
+        background-image: none;
+    }
+    .hamburger-menu{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    header .mobile-nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    header .mobile-nav .top{
+        background-color: var(--color-primary);
+        width: 100%;
+        margin-bottom: 3rem;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .mobile-nav .icon{
+        font-size: 1.7em;
+        cursor: pointer;
+        color: white;
+    }
+    header .mobile-nav ul li{
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+    .theme-btns-mobile button{
+        border: none;
+        background: none;
+        color: white;
+        font-size: 1.2rem;
+    }
+    .header-btns-mobile button{
+        display: block;
+        margin: 5rem 1rem;
+        border: none;
+        border-radius: .3rem;
+        width: 90%;
+        padding: .5rem;
+    }
 }

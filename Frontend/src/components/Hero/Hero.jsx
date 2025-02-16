@@ -9,8 +9,12 @@ const Hero = ({ image, heading, miniHeading, para, buttonState, bgImage }) => {
         <section className="hero-container" style={themeMode || !bgImage ? {backgroundImage: "url('')"} : null}>
             <div className="hero-banner">
                 <h4>{miniHeading}</h4>
-                <h1 style={themeMode ? {color: "white"} : null}>{heading}</h1>
-                <p style={themeMode ? {color: "var(--color-white)"} : null}>{ para }</p>
+                <h1 style={themeMode ? {color: "white"} : null}>
+                    {heading}
+                </h1>
+                <p style={themeMode ? {color: "var(--color-white)"} : null}>
+                    { para }
+                </p>
                 <a href="#contact">
                     {
                         buttonState ? (

@@ -57,7 +57,7 @@ const MessageForm = () => {
                         <input style={themeMode ? { backgroundColor: "var(--color-dark)", color: "white" } : null} type="email" id='email' onChange={e => setEmail(e.target.value)} name="email" value={email} required />
                     </label>
                     <label htmlFor="number">Mobile Number
-                        <input style={themeMode ? { backgroundColor: "var(--color-dark)", color: "white" } : null} type="text" id='number' onChange={e => setPhone(e.target.value)} name="phone" value={phone} required />
+                        <input style={themeMode ? { backgroundColor: "var(--color-dark)", color: "white" } : null} type="number" id='number' onChange={e => setPhone(e.target.value)} name="phone" value={phone} required />
                     </label>
                     <label htmlFor="message">How can we help ?
                         <textarea style={themeMode ? { backgroundColor: "var(--color-dark)", color: "white" } : null} id='message' onChange={e => setMessage(e.target.value)} value={message} name="message" required></textarea>

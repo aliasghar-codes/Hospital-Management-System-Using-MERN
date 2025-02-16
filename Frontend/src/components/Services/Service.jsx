@@ -4,6 +4,7 @@ import iconTwo from "../../images/icon02.png"
 import iconThree from "../../images/icon03.png"
 import "./Service.css"
 import useMainContext from "../../Context.js"
+import { FiArrowRight } from "react-icons/fi";
 
 const Service = () => {
     const { themeMode } = useMainContext();
@@ -25,7 +26,9 @@ const Service = () => {
                     <p style={themeMode ? {color: "var(--color-white)"} : null}>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam nulla enim iste at.
                     </p>
-                    <a style={themeMode ? {color: "white", border: "1.8px solid white"} : null} href="/doctors">&rarr;</a>
+                    <a style={themeMode ? {color: "white", border: "1.8px solid white"} : null} href="/doctors">
+                    <FiArrowRight />
+                    </a>
                 </div>
                 <div className="service">
                     <img src={iconTwo} alt="" />
@@ -35,7 +38,9 @@ const Service = () => {
                     <p style={themeMode ? {color: "var(--color-white)"} : null}>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus non ea dslfj.
                     </p>
-                    <a style={themeMode ? {color: "white", border: "1.8px solid white"} : null} href="/doctors">&rarr;</a>
+                    <a style={themeMode ? {color: "white", border: "1.8px solid white"} : null} href="/doctors">
+                    <FiArrowRight />
+                    </a>
                 </div>
                 <div className="service">
                     <img src={iconThree} alt="" />
@@ -45,7 +50,9 @@ const Service = () => {
                     <p style={themeMode ? {color: "var(--color-white)"} : null}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dignissimos a ducimus.
                     </p>
-                    <a style={themeMode ? {color: "white", border: "1.8px solid white"} : null} href="/doctors">&rarr;</a>
+                    <a style={themeMode ? {color: "white", border: "1.8px solid white"} : null} href="/doctors">
+                    <FiArrowRight />
+                    </a>
                 </div>
             </div>
         </section>

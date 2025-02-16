@@ -1,5 +1,5 @@
 .hero-container{
-    height: 85vh;
+    height: 83vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,13 +8,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 6rem;
+    overflow: hidden;
 }
 .hero-banner{
     width: 45%;
 }
 .hero-banner h1{
     font-size: 3rem;
-    margin: .5rem 0 3rem 0;
+    line-height: 4.5rem;
+    margin: .5rem 0 2rem 0;
     font-weight: 600;
 }
 .hero-banner h4{
@@ -33,7 +35,7 @@
     border: none;
     outline: none;
     border-radius: 5px;
-    padding: 1rem 3rem;
+    padding: .5rem 2rem;
     cursor: pointer;
     border: .5px solid transparent;
     transition: 1s ease;
@@ -51,4 +53,30 @@
 .hero-image img{
     width: 60%;
     filter: drop-shadow(5px 5px 10px rgba(41, 41, 41, 0.74));
+}
+
+@media screen and (max-width: 480px) {
+    .hero-container{
+        display: block;
+        flex-direction: column;
+        padding: 2rem 1rem 0 1rem; 
+        height: 90vh;
+    }
+    .hero-image{
+        margin-top: 5rem;
+        width: 100%;
+        justify-content: center;
+    }
+    .hero-banner{
+        width: 100%;
+    }
+    .hero-banner h1{
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: .5rem;
+        font-weight: 600;
+    }
+    .hero-banner button{
+        font-size: .6rem;
+    }
 }

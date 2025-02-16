@@ -1,0 +1,97 @@
+.doctors-list {
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    padding: 3rem;
+}
+
+.doctors-list h1 {
+    margin-bottom: 3rem;
+}
+
+.doctors-list .not-found {
+    margin-top: 3rem;
+    background-color: white;
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.doctors-list .doctor-container {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.doctors-list .doctor-card {
+    background-color: white;
+    width: 30%;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.doctors-list .doctor-card div {
+    width: 100%;
+    display: flex;
+}
+.doctors-list .doctor-card div h4{
+    width: 40%;
+    font-size: .9rem;
+}
+.doctors-list .doctor-card div p{
+    font-size: .8rem;
+}
+
+.doctors-list .doctor-card img {
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .doctors-list{
+        border-top-left-radius: .6rem;
+        border-top-right-radius: .6rem;
+        border-bottom-left-radius: 0;
+        padding: 2rem 1rem;
+        min-height: 93vh;
+    }
+    .doctors-list .not-found{
+        min-height: 10rem;
+        border-radius: .5rem;
+        margin-top: 2rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .doctors-list h1{
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .doctors-list .doctor-card{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .doctors-list .doctor-card img {
+        width: 60%;
+    }
+    .doctors-list .doctor-card div h4{
+        width: 7rem;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+    .doctors-list .doctor-card div p{
+        font-size: .7rem;
+    }
+}

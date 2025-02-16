@@ -4,12 +4,12 @@ import App from './App.jsx';
 import { MainContextProvider } from "./Context.js"
 
 const AppWrapper = () => {
-  
+
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [user, setUser] = useState({});
   const [themeMode, setThemeMode] = useState(false);
 
-  return(
+  return (
     <MainContextProvider value={{ isAuthenticated, setIsAuthenticated, user, setUser, themeMode, setThemeMode }}>
       <App />
     </MainContextProvider>

@@ -15,6 +15,7 @@
 .faq_right h2{
     font-size: 2rem;
     margin-bottom: 3rem;
+    font-weight: 600;
 }
 .faq_right .title{
     display: flex;
@@ -42,4 +43,12 @@
     line-height: 1.5rem;
     width: 95%;
     text-align: justify;
+}
+@media screen and (max-width: 480px) {
+    .faq_left{
+        display: none;
+    }
+    .faq_right{
+        width: 100%;
+    }
 }

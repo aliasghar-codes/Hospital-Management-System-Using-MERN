@@ -1,8 +1,15 @@
-import Home from "./Pages/Home.jsx"
-import Appointment from "./Pages/Appointment.jsx"
-import AboutUs from "./Pages/AboutUs.jsx"
-import Login from "./Pages/Login.jsx"
-import Register from "./Pages/Register.jsx"
+import Home from "./Pages/home/Home.jsx"
+import Appointment from "./Pages/appointment/Appointment.jsx"
+import AboutUs from "./Pages/about/AboutUs.jsx"
+import Login from "./Pages/login/Login.jsx"
+import Register from "./Pages/register/Register.jsx"
 import Policy from "./components/Privacy Policy/Policy.jsx"
+import AdminLogin from "./Pages/adminLogin/AdminLogin.jsx"
+import AdminLayout from "./components/Layout/AdminLayout.jsx"
+import AdminDashboard from "./Pages/adminDashboard/AdminDashboard.jsx"
+import AdminMsg from "./Pages/adminMsg/AdminMsg.jsx"
+import AddAdmin from "./Pages/addAdmin/AddAdmin.jsx"
+import AddDoctor from "./Pages/addDoctor/AddDoctor.jsx"
+import DoctorsList from "./Pages/doctorsList/DoctorsList.jsx"
 
-export { Home, Appointment, AboutUs, Login, Register, Policy }
+export { Home, Appointment, AboutUs, Login, Register, Policy, AdminLogin, AdminLayout, AdminDashboard, AddAdmin, AdminMsg, AddDoctor, DoctorsList }

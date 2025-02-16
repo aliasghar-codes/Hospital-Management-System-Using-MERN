@@ -51,3 +51,21 @@
 .message_right button:hover{
     background-color: #3179ff;
 }
+
+@media screen and (max-width: 480px) {
+    .message_left{
+        display: none;
+    }
+    .message_right h2{
+        font-size: 2rem;
+    }
+    .message_right{
+        width: 100%;
+    }
+    .message_right input{
+        width: 100%;
+    }
+    .message_right textarea{
+        width: 100%;
+    }
+}

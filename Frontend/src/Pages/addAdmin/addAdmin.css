@@ -1,0 +1,107 @@
+.add-admin {
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.add-admin .logo span {
+    font-size: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.add-admin .logo h3 {
+    font-size: 1.7rem;
+}
+
+.add-admin h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.add-admin form {
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.add-admin form div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.add-admin form input,
+.add-admin form select {
+    width: 49%;
+    outline: none;
+    border: 1px solid rgba(165, 165, 165, 0.76);
+    border-radius: .3rem;
+    padding: 1rem .7rem;
+    background-color: white;
+}
+
+.add-admin form button {
+    border: none;
+    color: white;
+    border-radius: .2rem;
+    font-weight: 700;
+    margin: 3rem auto;
+    display: block;
+    background-color: var(--color-primary);
+    padding: .5rem 3rem;
+    transition: all .3s ease;
+}
+
+.add-admin form button:hover {
+    padding: .5rem 3.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .add-admin h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+
+    .add-admin .logo span {
+        font-size: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .add-admin .logo h3 {
+        font-size: 1.2rem;
+    }
+
+    .add-admin {
+        border-top-left-radius: .6rem;
+        border-top-right-radius: .6rem;
+        border-bottom-left-radius: 0;
+        padding: 2rem 1rem;
+        min-height: 93vh;
+    }
+
+    .add-admin form {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .add-admin form div {
+        margin-bottom: 0;
+    }
+
+    .add-admin form input,
+    .add-admin form select {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

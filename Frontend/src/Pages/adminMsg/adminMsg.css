@@ -1,0 +1,84 @@
+.admin-messages {
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    padding: 3rem;
+}
+
+.admin-messages h1 {
+    margin-bottom: 3rem;
+}
+
+.admin-messages .not-found {
+    margin-top: 3rem;
+    background-color: white;
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.admin-messages .message-container {
+    background-color: white;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.admin-messages .message-container div {
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.admin-messages .message-container h4 {
+    width: 10rem;
+}
+
+.admin-messages .message-container p {
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .admin-messages h1 {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .admin-messages {
+        border-top-left-radius: .6rem;
+        border-top-right-radius: .6rem;
+        border-bottom-left-radius: 0;
+        padding: 2rem 1rem;
+        min-height: 93vh;
+    }
+
+    .admin-messages .not-found {
+        min-height: 10rem;
+        border-radius: .5rem;
+        margin-top: 2rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .admin-messages .message-container {
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .admin-messages .message-container h4 {
+        width: 7rem;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+    .admin-messages .message-container p {
+        font-size: .7rem;
+    }
+}

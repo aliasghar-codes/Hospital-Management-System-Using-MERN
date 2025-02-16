@@ -7,6 +7,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 .footer_container h3{
     margin-bottom: 3rem;
@@ -14,12 +15,20 @@ footer{
 .footer_first p{
     margin-bottom: 1rem;
 }
+footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
 footer .logo h3{
     color: black;
     font-size: 3rem;
 }
 footer .logo h3 span{
-    font-size: 5rem;
+    font-size: 4.3rem;
+    color: var(--color-primary);
+    font-weight: 600;
 }
 footer > h3{
     color: rgb(150, 150, 150);
@@ -40,7 +49,7 @@ footer .icons i{
     font-size: 1.5rem;
     margin-top: 3rem;
     border-radius: 50%;
-    margin-left: 15px;
+    margin-right: 1rem;
     background-color: rgb(163, 163, 163);
     display: flex;
     justify-content: center;
@@ -57,4 +66,24 @@ footer .icons i{
 .footer_fourth_container{
     display: flex;
     gap: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .footer_first{
+        margin-bottom: 3rem;
+    }
+    .footer_second{
+        margin-bottom: 3rem;
+    }
+    footer .logo h3{
+        font-size: 2rem;
+    }
+    footer .logo h3 span{
+        font-size: 2.5rem;
+        color: var(--color-primary);
+        font-weight: 600;
+    }
+    .footer_container h3{
+        margin-bottom: 1rem;
+    }
 }

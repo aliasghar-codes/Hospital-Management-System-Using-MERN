@@ -4,22 +4,22 @@ import faqImage from "../../images/faq image.png"
 
 const data = [
     {
-        id: 1,
+        id: 178934789234,
         title: "How do I schedule an appointment with a doctor?",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cupiditate tenetur! Maxime ut excepturi reprehenderit deserunt voluptatum voluptatem minus architecto fugiat, dolorum accusamus unde rerum atque, totam molestiae labore necessitatibus? Unde magni quide."
     },
     {
-        id: 2,
+        id: 2234234234325,
         title: "Can I reschedule or cancel my appointment online?",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cupiditate tenetur! Maxime ut excepturi reprehenderit deserunt voluptatum voluptatem minus architecto fugiat, dolorum accusamus unde rerum atque, totam molestiae labore necessitatibus? Unde magni quide."
     },
     {
-        id: 3,
+        id: 3234234234234,
         title: "What information do I need to provide when scheduling an appointment?",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cupiditate tenetur! Maxime ut excepturi reprehenderit deserunt voluptatum voluptatem minus architecto fugiat, dolorum accusamus unde rerum atque, totam molestiae labore necessitatibus? Unde magni quide."
     },
     {
-        id: 4,
+        id: 42342342342342,
         title: "How do I report a technical issue with the website?",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cupiditate tenetur! Maxime ut excepturi reprehenderit deserunt voluptatum voluptatem minus architecto fugiat, dolorum accusamus unde rerum atque, totam molestiae labore necessitatibus? Unde magni quide."
     }
@@ -46,7 +46,7 @@ const Faq = () => {
             <div className="faq_right">
                 <h2>Frequently asked questions</h2>
                 <ul>
-                    {data.map((item, index) => {
+                    {data.map(item => {
                         return (
                             <li onClick={() => toggleAccordian(item.id)} key={item.id}>
                                 <div className="title">
