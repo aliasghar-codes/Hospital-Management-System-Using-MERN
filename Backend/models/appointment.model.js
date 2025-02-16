@@ -1,4 +1,4 @@
-import mongoose, { trusted } from "mongoose";
+import mongoose from "mongoose";
 import validator from "validator";
 
 const appointmentSchema = new mongoose.Schema({
@@ -26,8 +26,8 @@ const appointmentSchema = new mongoose.Schema({
     },
     nic: {
         type: String,
-        minLength: [9, "Phone number must contain atlease 9 characters"],
-        maxLength: [13, "Phone number must contain no more than 13 characters"],
+        minLength: [9, "Nic number must contain atlease 9 characters"],
+        maxLength: [13, "Nic number must contain no more than 13 characters"],
     },
     dob: {
         type: Date,
@@ -70,8 +70,8 @@ const appointmentSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ["PENDING", "ACCEPTED", "REJECTED"],
-        default: "PENDING"
+        enum: ["Pending", "Accepted", "Rejected"],
+        default: "Pending"
     },
 })
 

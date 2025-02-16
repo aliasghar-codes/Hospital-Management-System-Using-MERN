@@ -23,13 +23,9 @@ const userSchema = new mongoose.Schema({
     phone: {
         type: String,
         unique: true,
-        minLength: [11, "Phone number must contain atlease 9 characters"],
-        maxLength: [11, "Phone number must contain no more than 13 characters"],
     },
     nic: {
         type: String,
-        minLength: [9, "Phone number must contain atlease 9 characters"],
-        maxLength: [13, "Phone number must contain no more than 13 characters"],
     },
     dob: {
         type: Date,
@@ -55,6 +51,10 @@ const userSchema = new mongoose.Schema({
     docAvatar: {
         public_id: String,
         url: String
+    },
+    theme: {
+        type: String,
+        default: "Light"
     }
 })
 
